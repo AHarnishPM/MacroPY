@@ -7,8 +7,6 @@ import time
 import datetime
 
 
-
-
 MOUSE = MouseController()
 KEYBOARD = KeyController()
 
@@ -136,7 +134,8 @@ if usage == 'w':
     listener.stop()
 
 
-    file = open(str(name+".txt"), "a")
+    file = open(str(name+".txt"), "w")
+
     for i in db:
         file.write(str(i)+"\n")
     file.close()
@@ -175,8 +174,6 @@ elif 'r' in usage:
                         for i in timelist:
                             if e.strftime("%H:%M:%S") == i:
                                 run(1)
-
-
 
         else:
             run(int(usage[1:]))
