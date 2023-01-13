@@ -5,6 +5,7 @@ The program takes inputs using argv and the input() function for scheduling exec
 
 When running the code, use this format:
 python3 macro.py filename function
+python3 macro.py test r5
 
 Functions:
 
